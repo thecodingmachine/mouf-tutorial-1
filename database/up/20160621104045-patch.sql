@@ -1,0 +1,3 @@
+CREATE TABLE user (id INT AUTO_INCREMENT NOT NULL, email VARCHAR(100) NOT NULL, name VARCHAR(100) NOT NULL COLLATE utf8_unicode_ci, password VARCHAR(100) NOT NULL COLLATE utf8_unicode_ci, created_date DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL, UNIQUE INDEX email (email), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB;
+
+INSERT INTO user (email, name, password) VALUES ('admin@admin.com', 'Administrator', '$2y$10$2sJOHZzRil5b2bZAHiuwseWSRrASwTxTXkzxMTAmLN/1wQlXrYyLO');

@@ -1,0 +1,9 @@
+
+<h1>Hello {{message}}!</h1>
+<h2>Lastest news</h2>
+<ul>
+    {% for post in news %}
+        <li>{{ post.body }}</li>
+    {% endfor %}
+</ul>
+<a href="login" class="btn btn-info">Login</a>
